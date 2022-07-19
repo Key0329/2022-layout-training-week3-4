@@ -240,7 +240,6 @@
 
 
 // ---------------------review---------------------
-
 .review{
     padding: 80px 0;
     h2{
@@ -291,5 +290,81 @@
     }
     .mb-s-4{
         margin-bottom: 16px;
+    }
+}
+
+// ---------------------contact---------------------
+.contact{
+    background: #FBF2F2;
+    padding: 80px 0;
+    &-form{
+        width: 49%;
+        margin: 0 auto;
+    }
+    h2{
+        color: $secondary-color;
+        font-size: $fz-12;
+        text-align: center;
+    }
+    p{
+        font-size: $fz-5;
+    }
+    label{
+        cursor: pointer;
+        &:not(:last-child){
+            display: block;
+        }
+    }
+    &-info{
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.5;
+        text-indent: 12px;
+        padding: 5px 0;
+        border: 1px solid #000;
+        background: transparent;
+    }
+    textarea{
+        height: 134px;
+    }
+    &-check{
+        margin-top: 6px;
+    }
+    &-submit{
+        width: 65%;
+        padding: 16px 0;
+        line-height: 24px;
+        border: none;
+        background: $primary-color;
+        color: #fff;
+        margin: 0 auto;
+        display: block;
+        cursor: pointer;
+        &:hover{
+            background: $secondary-color;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .contact{
+        &-form{
+            width: 85%;
+        }
+        p{
+            font-size: $fz-4;
+        }
+    }
+}
+
+@media(max-width:414px){
+    .contact{
+        padding: 40px 0;
+        &-form{
+            width: 100%;
+        }
+        h2{
+            font-size: $fz-6;
+        }
     }
 }
