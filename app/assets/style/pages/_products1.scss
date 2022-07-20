@@ -1,4 +1,4 @@
-.products-menu li{
+.products1-menu li{
     width: 33.3333333%;
     border: 1px solid #DCDCDC;
     a{
@@ -21,20 +21,20 @@
     .nav .container{
         max-width: 100%;
     }
-    .products-menu li a{
+    .products1-menu li a{
         padding: 16px 0 8px;
         font-size: $fz-6;
     }
 }
 
 @media(max-width:414px){
-    .products-menu li a{
+    .products1-menu li a{
         font-size: $fz-4;
     }
 }
 
-// ---------------------products-banner---------------------
-.products-banner{
+// ---------------------products1-banner---------------------
+.products1-banner{
     img{
         width: 50%;
     }
@@ -51,7 +51,7 @@
 
 
 // ---------------------main---------------------
-main{
+.products1{
     padding: 80px 0;
     h3{
         font-family: "roboto";
@@ -66,12 +66,12 @@ main{
     }
 }
 
-.products-subtitle{
+.products1-subtitle{
     font-size: $fz-8;
     text-align: center;
 }
 
-.products-item{
+.products1-item{
     width: 24%;
     font-size: $fz-6;
     font-family: "roboto";
@@ -95,7 +95,7 @@ main{
     }
 }
 
-.products-pagination{
+.products1-pagination{
     a{
         color: #555555;
         border: 1px solid #555555;
@@ -113,7 +113,7 @@ main{
 }
 
 @media(max-width:768px){
-    .products-item{
+    .products1-item{
         width: 48%;
     }
     .mb-md-10{
@@ -122,16 +122,16 @@ main{
 }
 
 @media(max-width:414px){
-    main{
+    .products1{
         padding: 40px 0 64px;
         h3{
             font-size: $fz-6;
         }
     }
-    .products-subtitle{
+    .products1-subtitle{
         font-size: $fz-6;
     }
-    .products-item{
+    .products1-item{
         width: 100%;
     }
     .mb-s-6{
@@ -143,7 +143,7 @@ main{
     .mb-md-16{
         margin-bottom: 64px;
     }
-    .products-pagination{
+    .products1-pagination{
         a{
             font-size: $fz-4;
             padding: 8px 12px;

@@ -1,0 +1,80 @@
+.location1{
+    padding: 96px 0 80px;
+    h2{
+        font-size: $fz-12;
+        padding-left: 1rem;
+        position: relative;
+        &::before{
+            content: "";
+            width: 8px;
+            height: 72px;
+            background-color: $primary-color;
+            position: absolute;
+            left: -4px;
+        }
+    }
+    label{
+        font-size: $fz-6;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #000 transparent transparent transparent;
+            z-index: 1;
+            top: 17px;
+            left: 386px;
+        }
+    }
+    &-select{
+        font-size: $fz-s-18;
+        line-height: 26px;
+        padding: 5px 238px 5px 12px;
+        border: 1px solid #CED4DA;
+        color: #495057;
+        appearance: none;
+    }
+}
+
+// --------------------------------ul--------------------------------
+
+.location1-list{
+    flex-wrap: wrap;
+    &-item{
+        width: 32%;
+        &-title{
+            padding: 7px 0 7px 24px;
+            border: 1px solid #00000020;
+            font-size: $fz-6;
+        }
+        &-content{
+            padding: 15px 24px;
+            border: 1px solid #00000020;
+            font-size: $fz-5;
+            a{
+                color: #000;
+                &:hover{
+                    opacity: 0.3;
+                }
+            }
+        }
+        &-icon{
+            width: 24px;
+            height: 24px;
+        }
+        &-detail{
+            font-size: $fz-s-19;
+            line-height: 27px;
+            text-align: center;
+            padding: 16px 0;
+            background: #000;
+            color: #fff;
+            &:hover{
+                opacity: 0.3;
+            }
+        }
+    }
+}
