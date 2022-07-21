@@ -218,6 +218,9 @@
         ul{
             flex-wrap: wrap;
         }
+        .dn{
+            display: none;  
+        }
 
     }
 }
@@ -229,10 +232,11 @@
         h2{
             font-size: $fz-6;
         }
+        .dn{
+            display: block;
+        }
     }
-    .dn{
-        display: block;
-    }
+    
     .dn-sm{
         display: none;
     }
