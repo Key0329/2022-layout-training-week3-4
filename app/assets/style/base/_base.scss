@@ -100,7 +100,7 @@
 .d-flex {
     display: flex;
 }
-.fxdc{
+.flex-column{
     flex-direction: column;
 }
 .f-jcsb {
@@ -124,11 +124,11 @@
 .f-ais{
     align-items: start;
 }
-.f-wrp {
+.flex-wrap {
     flex-wrap: wrap;
 }
 
-// font-weight
+// font
 .medium{
     font-weight: 500;
 }
@@ -140,6 +140,9 @@
 }
 .italic{
     font-style: italic;
+}
+.font-eng{
+    font-family: "roboto";
 }
 
 // 全站設定
@@ -169,4 +172,82 @@ body {
 .container{
     max-width: $width;
     margin: 0 auto;
+}
+
+// RWD
+
+.d-none{
+    display: none;  
+}
+
+@media(max-width:1296px){
+    .container{
+        padding: 0 12px;
+    }
+}
+
+@media(max-width:992px){
+
+    // container
+    .container{
+        padding: 0 36px;
+    }
+
+    // spacing
+    .mb-md-6{
+        margin-bottom: 24px;
+    }
+    .ms-md-4{
+        margin-left: 16px;
+    }
+}
+
+@media(max-width:767px){
+
+    // container
+    .container{
+        padding: 0 14px 0 13px;
+    }
+
+    // display
+    .d-sm-none{
+        display: none;
+    }
+    .d-sm-block{
+        display: block;
+    }
+
+    // flex
+    .flex-sm-column{
+        flex-direction: column;
+    }
+    .align-sm-start{
+        align-items: start;
+    }
+    .flex-sm-wrap{
+        flex-wrap: wrap;
+    }
+
+    // spacing
+    // bottom
+    .mb-sm-2{
+        margin-bottom: 8px;
+    }
+    .mb-sm-4{
+        margin-bottom: 16px;
+    }
+    .mb-sm-6{
+        margin-bottom: 24px;
+    }
+    // left
+    .ms-sm-0{
+        margin-left: 0;
+    }
+    .ms-sm-2{
+        margin-left: 8px;
+    }
+    // right
+    .me-sm-2{
+        margin-right: 8px;
+    }
 }

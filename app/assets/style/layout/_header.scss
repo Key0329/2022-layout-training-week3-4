@@ -18,25 +18,9 @@
     white-space: nowrap;
     background-size: cover;
 }
-.menu{
-    display: none;
-}
 
-@media(max-width:1296px){
-    .container{
-        max-width: 90%;
-    }
-}
-
-@media(max-width:414px){
-    .container{
-        max-width: 93%;
-    }
-    header .container ul{
-        display: none;
-    }
+@media(max-width:767px){
     .menu{
-        display: block;
         img{
             width: 40px;
             height: 40px;
