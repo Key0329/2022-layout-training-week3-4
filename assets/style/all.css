@@ -238,8 +238,16 @@ body {
 @media (max-width: 992px) {
   .container {
     padding: 0 36px; }
+  .d-md-none {
+    display: none; }
+  .d-md-block {
+    display: block; }
   .mb-md-6 {
     margin-bottom: 24px; }
+  .mb-md-10 {
+    margin-bottom: 40px; }
+  .mb-md-16 {
+    margin-bottom: 64px; }
   .ms-md-4 {
     margin-left: 16px; } }
 
@@ -262,12 +270,16 @@ body {
   .flex-sm-wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+  .mb-sm-0 {
+    margin-bottom: 0; }
   .mb-sm-2 {
     margin-bottom: 8px; }
   .mb-sm-4 {
     margin-bottom: 16px; }
   .mb-sm-6 {
     margin-bottom: 24px; }
+  .mb-sm-16 {
+    margin-bottom: 64px; }
   .ms-sm-0 {
     margin-left: 0; }
   .ms-sm-2 {
@@ -594,7 +606,6 @@ body {
     padding: 24px 0 16px;
     color: #000;
     text-align: center;
-    font-family: "roboto";
     font-size: 32px;
     border-bottom: 8px solid transparent; }
     .products1-menu li a:hover {
@@ -602,48 +613,36 @@ body {
     .products1-menu li a:focus {
       border-bottom: 8px solid #AA0601; }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav .container {
-    max-width: 100%; }
+    padding: 0; }
   .products1-menu li a {
     padding: 16px 0 8px;
     font-size: 24px; } }
 
-@media (max-width: 414px) {
+@media (max-width: 767px) {
   .products1-menu li a {
     font-size: 16px; } }
 
 .products1-banner img {
   width: 50%; }
 
-@media (max-width: 768px) {
-  .dn-md {
-    display: none; }
-  .dn {
-    display: block; } }
-
 .products1 {
   padding: 80px 0; }
   .products1 h3 {
-    font-family: "roboto";
     font-size: 42px;
     text-align: center; }
-  .products1 ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
   .products1 img:hover {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1); }
-
-.products1-subtitle {
-  font-size: 32px;
-  text-align: center; }
+  .products1-subtitle {
+    font-size: 32px;
+    text-align: center; }
 
 .products1-item {
   width: 24%;
-  font-size: 24px;
-  font-family: "roboto"; }
+  font-size: 24px; }
   .products1-item-content {
     color: #AA0601; }
   .products1-item-colorbox {
@@ -675,30 +674,24 @@ body {
 .products1-pagination-next {
   background-color: #F2F2F2; }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .products1-item {
-    width: 48%; }
-  .mb-md-10 {
-    margin-bottom: 40px; } }
+    width: 48%; } }
 
-@media (max-width: 414px) {
+@media (max-width: 767px) {
   .products1 {
     padding: 40px 0 64px; }
     .products1 h3 {
       font-size: 24px; }
-  .products1-subtitle {
-    font-size: 24px; }
-  .products1-item {
-    width: 100%; }
-  .mb-s-6 {
-    margin-bottom: 24px; }
-  .mb-s-0 {
-    margin-bottom: 0; }
-  .mb-md-16 {
-    margin-bottom: 64px; }
-  .products1-pagination a {
-    font-size: 16px;
-    padding: 8px 12px; } }
+    .products1-subtitle {
+      font-size: 24px; }
+    .products1-item {
+      width: 100%; }
+      .products1-item img {
+        width: 100%; }
+    .products1-pagination a {
+      font-size: 16px;
+      padding: 8px 12px; } }
 
 .products2-menu li {
   width: 33.3333333%;
@@ -707,7 +700,6 @@ body {
     padding: 24px 0 16px;
     color: #000;
     text-align: center;
-    font-family: "roboto";
     font-size: 32px;
     border-bottom: 8px solid transparent; }
     .products2-menu li a:hover {
@@ -715,48 +707,36 @@ body {
     .products2-menu li a:focus {
       border-bottom: 8px solid #AA0601; }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav .container {
     max-width: 100%; }
   .products2-menu li a {
     padding: 16px 0 8px;
     font-size: 24px; } }
 
-@media (max-width: 414px) {
+@media (max-width: 767px) {
   .products2-menu li a {
     font-size: 16px; } }
 
 .products2-banner img {
   width: 50%; }
 
-@media (max-width: 768px) {
-  .dn-md {
-    display: none; }
-  .dn {
-    display: block; } }
-
 .products2 {
   padding: 80px 0; }
   .products2 h3 {
-    font-family: "roboto";
     font-size: 42px;
     text-align: center; }
-  .products2 ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
   .products2 img:hover {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1); }
-
-.products2-subtitle {
-  font-size: 32px;
-  text-align: center; }
+  .products2-subtitle {
+    font-size: 32px;
+    text-align: center; }
 
 .products2-item {
   width: 32%;
-  font-size: 24px;
-  font-family: "roboto"; }
+  font-size: 24px; }
   .products2-item-content {
     color: #AA0601; }
   .products2-item-colorbox {
@@ -788,30 +768,22 @@ body {
 .products2-pagination-next {
   background-color: #F2F2F2; }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .products2-item {
-    width: 48%; }
-  .mb-md-10 {
-    margin-bottom: 40px; } }
+    width: 48%; } }
 
-@media (max-width: 414px) {
+@media (max-width: 767px) {
   .products2 {
     padding: 40px 0 64px; }
     .products2 h3 {
       font-size: 24px; }
-  .products2-subtitle {
-    font-size: 24px; }
-  .products2-item {
-    width: 100%; }
-  .mb-s-6 {
-    margin-bottom: 24px; }
-  .mb-s-0 {
-    margin-bottom: 0; }
-  .mb-md-16 {
-    margin-bottom: 64px; }
-  .products2-pagination a {
-    font-size: 16px;
-    padding: 8px 12px; } }
+    .products2-subtitle {
+      font-size: 24px; }
+    .products2-item {
+      width: 100%; }
+    .products2-pagination a {
+      font-size: 16px;
+      padding: 8px 12px; } }
 
 .location1 {
   padding: 96px 0 80px; }
@@ -842,43 +814,40 @@ body {
     .location1-select-label {
       font-size: 24px; }
 
-.location1-list {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .location1-list-item {
-    width: 32%; }
-    .location1-list-item-title {
-      padding: 7px 0 7px 24px;
-      border: 1px solid #00000020;
-      font-size: 24px; }
-    .location1-list-item-content {
-      padding: 15px 24px;
-      border: 1px solid #00000020;
-      font-size: 20px; }
-      .location1-list-item-content a {
-        color: #000; }
-        .location1-list-item-content a:hover {
-          opacity: 0.3; }
-    .location1-list-item-icon {
-      width: 24px;
-      height: 24px; }
-    .location1-list-item-detail {
-      font-size: 19px;
-      line-height: 27px;
-      text-align: center;
-      padding: 16px 0;
-      background: #000;
-      color: #fff; }
-      .location1-list-item-detail:hover {
+.location1-list-item {
+  width: 32%; }
+  .location1-list-item-title {
+    padding: 7px 0 7px 24px;
+    border: 1px solid #00000020;
+    font-size: 24px; }
+  .location1-list-item-content {
+    padding: 15px 24px;
+    border: 1px solid #00000020;
+    font-size: 20px; }
+    .location1-list-item-content a {
+      color: #000; }
+      .location1-list-item-content a:hover {
         opacity: 0.3; }
+  .location1-list-item-icon {
+    width: 24px;
+    height: 24px; }
+  .location1-list-item-detail {
+    font-size: 19px;
+    line-height: 27px;
+    text-align: center;
+    padding: 16px 0;
+    background: #000;
+    color: #fff; }
+    .location1-list-item-detail:hover {
+      opacity: 0.3; }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .location1 {
     padding: 80px 0; }
   .location1-list-item {
     width: 48%; } }
 
-@media (max-width: 414px) {
+@media (max-width: 767px) {
   .location1 {
     padding: 40px 0 64px; }
     .location1-list-item {
@@ -890,8 +859,6 @@ body {
     .location1-select {
       padding: 5px 0 5px 12px;
       width: 79%; }
-  .me-m-2 {
-    margin-right: 8px; }
   .location1-select-label {
     font-size: 16px; } }
 
@@ -948,7 +915,7 @@ body {
   background-position: center center;
   background-size: contain; }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .location2 {
     padding: 80px 0; }
     .location2-store {
@@ -968,12 +935,12 @@ body {
       height: 414px;
       background-size: cover; } }
 
-@media (max-width: 414px) {
+@media (max-width: 767px) {
   .location2 {
     padding: 40px 0 64px; }
     .location2-store {
-      display: block;
-      width: 100%; }
+      width: 100%;
+      display: block; }
       .location2-store-pic {
         width: 100%; }
       .location2-store-item {
@@ -989,8 +956,6 @@ body {
       width: 100%;
       height: 208px;
       background-size: contain; }
-  .me-m-2 {
-    margin-right: 8px; }
   .location2-select-label {
     font-size: 16px; } }
 
