@@ -193,10 +193,27 @@ body {
         padding: 0 36px;
     }
 
+    // display
+    .d-md-none{
+        display: none;
+    }
+    .d-md-block{
+        display: block;
+    }
+
     // spacing
+    // bottom
     .mb-md-6{
         margin-bottom: 24px;
     }
+    .mb-md-10{
+        margin-bottom: 40px;
+    }
+    .mb-md-16{
+        margin-bottom: 64px;
+    }
+
+    // left
     .ms-md-4{
         margin-left: 16px;
     }
@@ -230,6 +247,9 @@ body {
 
     // spacing
     // bottom
+    .mb-sm-0{
+        margin-bottom: 0;
+    }
     .mb-sm-2{
         margin-bottom: 8px;
     }
@@ -238,6 +258,9 @@ body {
     }
     .mb-sm-6{
         margin-bottom: 24px;
+    }
+    .mb-sm-16{
+        margin-bottom: 64px;
     }
     // left
     .ms-sm-0{

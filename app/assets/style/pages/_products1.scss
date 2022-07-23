@@ -5,7 +5,6 @@
         padding: 24px 0 16px;
         color: #000;
         text-align: center;
-        font-family: "roboto";
         font-size: $fz-8;
         border-bottom: 8px solid transparent;
         &:hover{
@@ -17,9 +16,9 @@
     }
 } 
 
-@media(max-width:768px){
+@media(max-width:992px){
     .nav .container{
-        max-width: 100%;
+        padding: 0;
     }
     .products1-menu li a{
         padding: 16px 0 8px;
@@ -27,26 +26,15 @@
     }
 }
 
-@media(max-width:414px){
+@media(max-width:767px){
     .products1-menu li a{
         font-size: $fz-4;
     }
 }
 
 // ---------------------products1-banner---------------------
-.products1-banner{
-    img{
-        width: 50%;
-    }
-}
-
-@media(max-width:768px){
-    .dn-md{
-        display: none;
-    }
-    .dn{
-        display: block;
-    }
+.products1-banner img{
+    width: 50%;
 }
 
 
@@ -54,27 +42,21 @@
 .products1{
     padding: 80px 0;
     h3{
-        font-family: "roboto";
         font-size: $fz-s-42;
         text-align: center;
-    }
-    ul{
-        flex-wrap: wrap;
     }
     img:hover{
         transform: scale(1.1);
     }
-}
-
-.products1-subtitle{
-    font-size: $fz-8;
-    text-align: center;
+    &-subtitle{
+        font-size: $fz-8;
+        text-align: center;
+    }
 }
 
 .products1-item{
     width: 24%;
     font-size: $fz-6;
-    font-family: "roboto";
     &-content{
         color: $primary-color;
     }
@@ -112,42 +94,32 @@
     }
 }
 
-@media(max-width:768px){
+@media(max-width:992px){
     .products1-item{
         width: 48%;
     }
-    .mb-md-10{
-        margin-bottom: 40px;
-    }
 }
 
-@media(max-width:414px){
+@media(max-width:767px){
     .products1{
         padding: 40px 0 64px;
         h3{
             font-size: $fz-6;
         }
-    }
-    .products1-subtitle{
-        font-size: $fz-6;
-    }
-    .products1-item{
-        width: 100%;
-    }
-    .mb-s-6{
-        margin-bottom: 24px;
-    }
-    .mb-s-0{
-        margin-bottom: 0;
-    }
-    .mb-md-16{
-        margin-bottom: 64px;
-    }
-    .products1-pagination{
-        a{
-            font-size: $fz-4;
-            padding: 8px 12px;
+        &-subtitle{
+            font-size: $fz-6;
         }
-
+        &-item{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        &-pagination{
+            a{
+                font-size: $fz-4;
+                padding: 8px 12px;
+            }
+        }
     }
 }
