@@ -1,0 +1,40 @@
+.faq{
+    padding: 96px 0 80px;
+    h2{
+        font-size: $fz-12;
+        padding-left: 1rem;
+        position: relative;
+        &::before{
+            content: "";
+            width: 8px;
+            height: 72px;
+            background-color: $primary-color;
+            position: absolute;
+            left: -4px;
+        }
+    }
+    h3{
+        font-size: $fz-6;
+    }
+    &-question{
+        font-size: $fz-5;
+    }
+}
+
+@media(max-width:992px){
+    .faq{
+        padding: 80px 0;
+    }
+}
+
+@media(max-width:767px){
+    .faq{
+        padding: 40px 0 64px;
+        h2{
+            font-size: $fz-6;
+            &::before{
+                height: 36px;
+            }
+        }
+    }
+}

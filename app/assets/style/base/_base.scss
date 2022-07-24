@@ -60,6 +60,9 @@
 .mb-24{
     margin-bottom: 96px;
 }
+.mb-31{
+    margin-bottom: 124px;
+}
 
 .mt-3{
     margin-top: 12px;
@@ -70,6 +73,9 @@
 }
 .me-2{
     margin-right: 8px;
+}
+.me-3{
+    margin-right: 12px;
 }
 .me-4{
     margin-right: 16px;
@@ -82,6 +88,10 @@
 }
 .me-12{
     margin-right: 48px;
+}
+
+.ms-2{
+    margin-left: 8px;
 }
 .ms-6{
     margin-left: 24px;
@@ -99,6 +109,9 @@
 // d-flex
 .d-flex {
     display: flex;
+}
+.d-inline-block{
+    display: inline-block;
 }
 .flex-column{
     flex-direction: column;
@@ -200,9 +213,24 @@ body {
     .d-md-block{
         display: block;
     }
+    .d-md-inline-block{
+        display: inline-block;
+    }
 
     // spacing
     // bottom
+    .mb-md-0{
+        margin-bottom: 0;
+    }
+    .mb-md-1{
+        margin-bottom: 4px;
+    }
+    .mb-md-2{
+        margin-bottom: 8px;
+    }
+    .mb-md-4{
+        margin-bottom: 16px;
+    }
     .mb-md-6{
         margin-bottom: 24px;
     }
@@ -212,10 +240,21 @@ body {
     .mb-md-16{
         margin-bottom: 64px;
     }
+    .mb-md-20{
+        margin-bottom: 80px;
+    }
 
     // left
     .ms-md-4{
         margin-left: 16px;
+    }
+
+    // right
+    .me-md-0{
+        margin: 0;
+    }
+    .me-md-4{
+        margin-right: 16px;
     }
 }
 
@@ -237,6 +276,9 @@ body {
     // flex
     .flex-sm-column{
         flex-direction: column;
+    }
+    .justify-content-sm-between{
+        justify-content: space-between;
     }
     .align-sm-start{
         align-items: start;
@@ -270,7 +312,13 @@ body {
         margin-left: 8px;
     }
     // right
+    .me-sm-0{
+        margin-right: 0;
+    }
     .me-sm-2{
         margin-right: 8px;
+    }
+    .me-sm-4{
+        margin-right: 16px;
     }
 }

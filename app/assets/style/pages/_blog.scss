@@ -1,0 +1,144 @@
+.blog-nav{
+    background: $secondary-color;
+    &-link{
+        font-size: $fz-5;
+        padding: 13px 0;
+    }
+}
+
+.blog-search{
+    width: 40px;
+    height: 40px;
+}
+
+// main
+
+.blog{
+    padding: 96px 0 80px;
+    h2{
+        font-size: $fz-12;
+        padding-left: 1rem;
+        position: relative;
+        &::before{
+            content: "";
+            width: 8px;
+            height: 72px;
+            background-color: $primary-color;
+            position: absolute;
+            left: -4px;
+        }
+    }
+    img{
+        width: 49%;
+    }
+    &-content{
+        width: 49%;
+        &-title{
+            font-size: $fz-8;
+            color: $secondary-color;
+        }
+        &-subtitle{
+            font-size: $fz-5;
+        }
+        &-text{
+            font-size: $fz-5;
+        }
+        &-more{
+            font-size: $fz-12;
+            color: $secondary-color;
+            align-self: flex-end;
+        }
+        a:hover{
+            opacity: 0.3;
+            transition: all 0.2s;
+        }
+    }
+}
+
+@media(max-width:992px){
+    .blog{
+        padding: 80px 0;
+        img{
+            width: 48%;
+        }
+        &-content{
+            &-title{
+                font-size: $fz-6;
+            }
+            &-subtitle{
+                font-size: $fz-4;
+            }
+            &-text{
+                font-size: $fz-4;
+                &-more{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:767px){
+    .blog{
+        padding: 40px 0 64px;
+        h2{
+            font-size: $fz-6;
+            &::before{
+                height: 36px;
+            }
+        }
+        img{
+            width: 100%;
+        }
+        &-content{
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// pagination
+
+.blog-pagination{
+    a{
+        color: #555555;
+        border: 1px solid #555555;
+        padding: 12px 16px;
+        font-size: $fz-s-18;
+        &:hover{
+            background-color: #000;
+            color: #fff;
+            transition: 0.3s;
+        }
+    }
+    &-next{
+        background-color: #F2F2F2;
+    }
+}
+
+@media(max-width:767px){
+    .blog-pagination{
+        a{
+            font-size: $fz-4;
+            padding: 8px 12px;
+        }
+    }
+}

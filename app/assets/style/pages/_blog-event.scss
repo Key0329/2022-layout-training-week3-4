@@ -1,0 +1,122 @@
+.blog-nav{
+    background: $secondary-color;
+    a:hover{
+        opacity: 0.3;
+        transition: all 0.2s;
+    }
+    &-link{
+        font-size: $fz-5;
+        padding: 13px 0;
+    }
+}
+
+.blog-search{
+    width: 40px;
+    height: 40px;
+}
+
+@media(max-width:767px){
+    .blog-nav{
+        ul{
+            width: 100%;
+        }
+        &-link{
+            font-size: $fz-4;
+        }
+    }
+}
+
+// main
+.blog-event{
+    padding: 24px 0 80px;
+    &-link{
+        color: #000;
+        &-special{
+            color: $primary-color;
+        }
+    }
+    &-content{
+        width: 66%;
+        a{
+            color: #000;
+        }
+        h2{
+            font-size: $fz-12;
+        }
+        h3{
+            font-size: $fz-6;
+        }
+        &-text{
+            color: #555555;
+        }
+    }
+    &-footer{
+        width: 66%;
+        a{
+            color: #000;
+        }
+        &-share{
+            gap: 16px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #707070;
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    &-tag{
+        color: $primary-color;
+        font-size: $fz-6;
+    }
+    &-tagTitle{
+        font-size: $fz-8;
+        color: $primary-color;
+    }
+    .blog-event-tagTitle-label{
+        font-size: $fz-12;
+    }
+    a:hover{
+        opacity: 0.3;
+        transition: all 0.2s;
+    }
+}
+
+@media(max-width:992px){
+    .blog-event{
+        padding: 8px 0 80px;
+        &-content{
+            width: 74%;
+        }
+        &-footer{
+            width: 100%;
+        }
+        &-md-tag{
+            font-size: $fz-4;
+        }
+        &-tagTitle{
+            font-size: $fz-4;
+        }
+        .blog-event-tagTitle-label{
+            font-size: $fz-6;
+        }
+    }
+}
+
+@media(max-width:767px){
+    .blog-event{
+        padding: 16px 0 64px;
+        &-tag{
+            font-size: $fz-4;
+        }
+        &-content{
+            width: 100%;
+            h2{
+                font-size: $fz-6;
+            }
+            h3{
+                font-size: $fz-4;
+            }
+        }
+    }
+}
