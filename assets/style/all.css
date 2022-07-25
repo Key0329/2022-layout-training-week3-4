@@ -341,7 +341,7 @@ body {
 .logo {
   background-image: url(../images/logo-white.png);
   width: 83px;
-  height: 48px;
+  height: 50px;
   overflow: hidden;
   text-indent: 101%;
   white-space: nowrap;
