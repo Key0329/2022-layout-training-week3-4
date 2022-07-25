@@ -38,6 +38,12 @@
 
 .location1-list-item{
     width: 32%;
+    a{
+        color: #000;
+            &:hover{
+                opacity: 0.5;
+            }
+    }
     &-title{
         padding: 7px 0 7px 24px;
         border: 1px solid #00000020;
@@ -47,12 +53,6 @@
         padding: 15px 24px;
         border: 1px solid #00000020;
         font-size: $fz-5;
-        a{
-            color: #000;
-            &:hover{
-                opacity: 0.3;
-            }
-        }
     }
     &-icon{
         width: 24px;
@@ -65,9 +65,6 @@
         padding: 16px 0;
         background: #000;
         color: #fff;
-        &:hover{
-            opacity: 0.3;
-        }
     }
 }
 

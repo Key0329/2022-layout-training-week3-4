@@ -355,6 +355,10 @@
         }
         &-submit{
             width: 100%;
+            &:hover{
+                width: 95%;
+                transition: all 0.3s;
+            }
         }
     }
 }
