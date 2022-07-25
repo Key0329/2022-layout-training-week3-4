@@ -1,7 +1,5 @@
 .header{
     background: $primary-color; 
-    position: sticky;
-    top: 0;
     .menu-list{
         padding: 25px 0;
         font-size: $fz-5;
@@ -22,9 +20,13 @@
 }
 
 @media(max-width:767px){
-    header .container{
-        position: relative;
-    }
+    header{
+        position: sticky;
+        top: 0;
+        .container{
+            position: relative;
+        }
+    } 
     .menu{
         img{
             width: 40px;
