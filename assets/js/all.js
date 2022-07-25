@@ -1,7 +1,13 @@
 "use strict";
 
-console.log('Hello!');
 $(document).ready(function () {
-  console.log('HesSchool Hello!');
+  //下拉選單 
+  $(".menu").click(function (event) {
+    event.preventDefault(); // $(".menu-drop").toggleClass("d-sm-flex");
+
+    $(".menu-drop").slideToggle(function () {
+      if ($(this).is(":visible")) $(this).css("display", "flex");
+    });
+  });
 });
 //# sourceMappingURL=all.js.map
