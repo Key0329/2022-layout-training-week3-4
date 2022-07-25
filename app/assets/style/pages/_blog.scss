@@ -97,24 +97,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // pagination
 
 .blog-pagination{
@@ -139,6 +121,15 @@
         a{
             font-size: $fz-4;
             padding: 8px 12px;
+        }
+    }
+}
+
+@media(max-width:320px){
+    .blog-pagination{
+        a{
+            font-size: $fz-2;
+            padding: 8px 6px;
         }
     }
 }

@@ -32,6 +32,12 @@
     }
 }
 
+@media(max-width:320px){
+    .products2-menu li{
+        width: 100%;
+    }
+}
+
 // ---------------------products2-banner---------------------
 .products2-banner{
     img{
@@ -118,6 +124,15 @@
                 font-size: $fz-4;
                 padding: 8px 12px;
             }
+        }
+    }
+}
+
+@media(max-width:320px){
+    .products2-pagination{
+        a{
+            font-size: $fz-2;
+            padding: 8px 6px;
         }
     }
 }
