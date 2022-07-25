@@ -328,10 +328,7 @@ body {
     margin-right: 16px; } }
 
 .header {
-  background: #AA0601;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0; }
+  background: #AA0601; }
   .header .menu-list {
     padding: 25px 0;
     font-size: 20px;
@@ -351,8 +348,12 @@ body {
   background-size: cover; }
 
 @media (max-width: 767px) {
-  header .container {
-    position: relative; }
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; }
+    header .container {
+      position: relative; }
   .menu img {
     width: 40px;
     height: 40px; }
