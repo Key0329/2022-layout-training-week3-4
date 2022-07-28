@@ -38,7 +38,8 @@
             font-size: $fz-16;
             color: $secondary-color;
         }
-        button{
+        a{
+            display: inline-block;
             padding: 6px 12px;
             color: #fff;
             border: none;
@@ -47,19 +48,20 @@
             cursor: pointer;
             transition: 0.3s;
             &:hover{
-                opacity: 0.3;
+                opacity: 0.5;
+                transform: scale(0.9);
             }
         }
     }
 }
 
-@media(max-width:992px){
+@include pad{
     .banner{
         background-image: url(../images/home-header-sm.png);
     }
 }
 
-@media(max-width:767px){
+@include mobile{
     .banner{
         height: 70vh;
         .container{
@@ -73,7 +75,7 @@
     } 
 }
 
-@media(max-width:414px){
+@include mobile-md{
     .banner{
         height: 50vh;
     }
@@ -102,14 +104,14 @@
     }
 }
 
-@media(max-width:992px){
+@include pad{
     .intro ul li{
         width: 48%;
     }
 
 }
 
-@media(max-width:767px){
+@include mobile{
     .intro{
         padding: 40px 0;
         h2{
@@ -140,12 +142,12 @@
     }
     a:hover{
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        transform: scale(1.1);
+        transform: scale(0.9);
         transition: 0.3s;
     }
 }
 
-@media(max-width:992px){
+@include pad{
     .classic{
         .container{
             width: 45%;
@@ -157,7 +159,7 @@
     }
 }
 
-@media(max-width:767px){
+@include mobile{
     .classic{
         padding: 40px 0;
         .container{
@@ -170,7 +172,7 @@
     }
 }
 
-@media(max-width:330px){
+@include mobile-sm{
     .classic h3{
         font-size: $fz-8;
     }
@@ -194,19 +196,19 @@
     }
     a:hover{
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        transform: scale(1.1);
+        transform: scale(0.9);
         transition: 0.3s;
     }
 }
 
-@media(max-width:992px){
+@include pad{
     .design{
         background-image: url(../images/index-bg-sm.png);
         background-position: center top;
     }
 }
 
-@media(max-width:767px){
+@include mobile{
     .design{
         padding: 40px 0;
         background-image: url(../images/index-bg-md.png);
@@ -256,13 +258,13 @@
     }
 }
 
-@media(max-width:992px){
+@include pad{
     .review ul li{
         width: 48%;
     }
 }
 
-@media(max-width:767px){
+@include mobile{
     .review{
         padding: 40px 0;
         h2{
@@ -333,7 +335,7 @@
     }
 }
 
-@media(max-width:992px){
+@include pad{
     .contact{
         &-form{
             width: 79%;
@@ -344,7 +346,7 @@
     }
 }
 
-@media(max-width:767px){
+@include mobile{
     .contact{
         padding: 40px 0;
         &-form{

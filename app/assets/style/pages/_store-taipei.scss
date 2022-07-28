@@ -1,4 +1,4 @@
-.location2{
+.store-taipei{
     padding: 96px 0 80px;
     h2{
         font-size: $fz-12;
@@ -36,7 +36,7 @@
 
 // --------------------------------ul--------------------------------
 
-.location2-store{    
+.store-taipei-store{    
     width: 41%;
     &-item{
         &-title{
@@ -62,15 +62,15 @@
     }
 }
 
-.location2-map{
+.store-taipei-map{
     width: 57%;
     background-image: url("../images/螢幕快照 2020-02-13 16.35.44.png");
     background-position: center center;
     background-size: contain;
 }
 
-@media(max-width:992px){
-    .location2{
+@include pad{
+    .store-taipei{
         padding: 80px 0;
         &-store{
             display: flex;
@@ -91,8 +91,8 @@
     }
 }
 
-@media(max-width:767px){
-    .location2{
+@include mobile{
+    .store-taipei{
         padding: 40px 0 64px;
         &-store{
             width: 100%;
@@ -121,7 +121,7 @@
             background-size: contain;
         }
     }
-    .location2-select-label{
+    .store-taipei-select-label{
         font-size: $fz-4;
     }
 }

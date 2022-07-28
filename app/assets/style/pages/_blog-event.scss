@@ -1,12 +1,12 @@
 .blog-nav{
     background: $secondary-color;
-    a:hover{
-        opacity: 0.3;
-        transition: all 0.2s;
-    }
     &-link{
         font-size: $fz-5;
         padding: 13px 0;
+        &:hover{
+            color: $primary-color;
+            transition: all 0.2s;
+        }
     }
 }
 
@@ -15,7 +15,7 @@
     height: 40px;
 }
 
-@media(max-width:767px){
+@include mobile{
     .blog-nav{
         ul{
             width: 100%;
@@ -82,7 +82,7 @@
     }
 }
 
-@media(max-width:992px){
+@include pad{
     .blog-event{
         padding: 8px 0 80px;
         &-content{
@@ -103,7 +103,7 @@
     }
 }
 
-@media(max-width:767px){
+@include mobile{
     .blog-event{
         padding: 16px 0 64px;
         &-tag{

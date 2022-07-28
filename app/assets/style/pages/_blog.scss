@@ -3,6 +3,10 @@
     &-link{
         font-size: $fz-5;
         padding: 13px 0;
+        &:hover{
+            color: $primary-color;
+            transition: all 0.2s;
+        }
     }
 }
 
@@ -42,6 +46,7 @@
         }
         &-text{
             font-size: $fz-5;
+            color: #000;
         }
         &-more{
             font-size: $fz-12;
@@ -55,7 +60,7 @@
     }
 }
 
-@media(max-width:992px){
+@include pad{
     .blog{
         padding: 80px 0;
         img{
@@ -78,7 +83,7 @@
     }
 }
 
-@media(max-width:767px){
+@include mobile{
     .blog{
         padding: 40px 0 64px;
         h2{
@@ -116,7 +121,7 @@
     }
 }
 
-@media(max-width:767px){
+@include pad{
     .blog-pagination{
         a{
             font-size: $fz-4;
@@ -125,7 +130,7 @@
     }
 }
 
-@media(max-width:320px){
+@include mobile{
     .blog-pagination{
         a{
             font-size: $fz-2;

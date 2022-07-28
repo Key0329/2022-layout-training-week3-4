@@ -1,4 +1,4 @@
-.location1{
+.store{
     padding: 96px 0 80px;
     h2{
         font-size: $fz-12;
@@ -36,8 +36,9 @@
 
 // --------------------------------ul--------------------------------
 
-.location1-list-item{
-    width: 32%;
+.store-list-item{
+    width: 33.33333%;
+    padding: 0 12px;
     a{
         color: #000;
             &:hover{
@@ -68,17 +69,17 @@
     }
 }
 
-@media(max-width:992px){
-    .location1{
+@include pad{
+    .store{
         padding: 80px 0;
     }
-    .location1-list-item{
+    .store-list-item{
         width: 48%;
     }
 }
 
-@media(max-width:767px){
-    .location1{
+@include mobile{
+    .store{
         padding: 40px 0 64px;
         &-list-item{
             width: 100%;
@@ -95,7 +96,7 @@
         }
     }
 
-    .location1-select-label{
+    .store-select-label{
         font-size: $fz-4;
     }
 }
