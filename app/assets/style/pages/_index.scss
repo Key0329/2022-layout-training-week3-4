@@ -53,10 +53,7 @@
             }
         }
     }
-}
-
-@include pad{
-    .banner{
+    @include pad{
         background-image: url(../images/home-header-sm.png);
     }
 }

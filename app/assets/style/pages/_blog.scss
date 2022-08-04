@@ -43,6 +43,10 @@
         }
         &-subtitle{
             font-size: $fz-5;
+            color: #000;
+        }
+        &-date{
+            color: #000;
         }
         &-text{
             font-size: $fz-5;
@@ -52,6 +56,10 @@
             font-size: $fz-12;
             color: $secondary-color;
             align-self: flex-end;
+        }
+        &:hover{
+            opacity: 0.3;
+            transition: all 0.2s;
         }
         a:hover{
             opacity: 0.3;
